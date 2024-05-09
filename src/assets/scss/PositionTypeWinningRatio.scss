@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+.report-card {
+    background-color: white;
+
+    table.styled-table {
+        border-collapse: collapse;
+        margin: 25px;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+        tr:first-child {
+            background-color: $mainColor;
+            color: #ffffff;
+        }
+
+        tr {
+            border-bottom: 1px solid #dddddd;
+
+            &:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            &:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+
+            th,
+            td {
+                &:first-child {
+                    background-color: $mainColor;
+                    color: #ffffff;
+                }
+
+                &.empty-cell {
+                    border-right: 1px solid #dddddd;
+
+                }
+
+                font-size: 15px;
+                text-align: center;
+                padding: 12px 15px;
+            }
+        }
+    }
+}

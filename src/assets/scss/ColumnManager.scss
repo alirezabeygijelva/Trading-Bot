@@ -1,0 +1,78 @@
+@import './variables.scss';
+
+#column-manager {
+    .list-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .list-item {
+            flex: 1 1 100%;
+            display: inline-flex;
+            align-items: center;
+            min-height: 40px;
+            margin: 0.2rem;
+            padding: 0.1rem;
+            border: #DCDCDC solid 1px;
+            border-radius: 3px;
+
+            &.is-visible {
+                background-color: #FFFFFF;
+
+                &.is-dragging {
+                    background-color: #F0FFFF;
+                }
+            }
+
+            &.is-hidden {
+                background-color: #C0C0C0;
+
+                &.is-dragging {
+                    background-color: #F0FFFF;
+                }
+            }
+
+            .drag-handle {
+                margin: 0.1rem;
+            }
+
+            .item-title {
+                margin: 0.1rem;
+                font-weight: 700;
+            }
+
+            .action-box {
+                margin: 0 5px 0 auto;
+
+                .p-inputnumber {
+                    .p-inputnumber-input {
+                        width: 60px;
+                    }
+                }
+
+                .p-dropdown {
+                    .p-dropdown-label {
+                        width: 45px;
+                    }
+                }
+
+                .customInput {
+                    padding: 0.5rem 0.5rem;
+                    border: 1px solid #ced4da;
+                    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+                    border-radius: 3px;
+                    margin-right: 0.5em;
+                }
+
+                .customInput:enabled:hover {
+                    border-color: #2196F3;
+                }
+            }
+
+        }
+    }
+
+    .p-multiselect-label {
+        text-align: left;
+    }
+
+}

@@ -1,0 +1,23 @@
+#login-container {
+    .card {
+        min-width: 350px;
+        border: 1px solid lightgray;
+
+        @media screen and (max-width: 960px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+            min-width: 0;
+        }
+
+        form {
+            margin-top: 1rem;
+        }
+
+        .p-field {
+            margin-bottom: 2.2rem;
+        }
+    }
+}

@@ -1,0 +1,200 @@
+@import 'variables';
+
+#confirmaton-selection.p-selectbutton {
+    .p-button[aria-label="confirm"] {
+        background-color: #a7fdb2 !important;
+        color: #000;
+
+        &:hover {
+            background-color: #59fd6f !important;
+        }
+
+        &.p-highlight {
+            font-weight: bolder;
+            background-color: #24aa35 !important;
+            color: #FFF;
+
+            &:hover {
+                background-color: #09961c !important;
+            }
+        }
+    }
+
+    .p-button[aria-label="not-sure"] {
+        background-color: #ebebeb !important;
+        color: #000;
+
+        &:hover {
+            background-color: #cecbcb !important;
+        }
+
+        &.p-highlight {
+            font-weight: bolder;
+            background-color: #4b4646 !important;
+            color: #FFF;
+
+            &:hover {
+                background-color: rgb(58, 56, 56) !important;
+            }
+        }
+    }
+
+    .p-button[aria-label="reject"] {
+        background-color: #fcb0b6 !important;
+        color: #000;
+
+        &:hover {
+            background-color: #fc8a94 !important;
+        }
+
+        &.p-highlight {
+            font-weight: bolder;
+            background-color: #fc4756 !important;
+            color: #FFF;
+
+            &:hover {
+                background-color: #dd2837 !important;
+            }
+        }
+    }
+}
+
+.reviews {
+    background-color: #fff;
+    border: 1px solid #e5e5ea;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "SanFrancisco";
+    font-size: 1.25rem;
+    margin: 0 auto 1rem;
+    padding: 0.5rem 1.5rem;
+
+    .review-conteiner {
+        border-radius: 1.15rem;
+        line-height: 1.25;
+        max-width: 75%;
+        padding: 0.5rem .875rem;
+        position: relative;
+        word-wrap: break-word;
+        background-color: #ebebeb;
+        color: #000;
+
+        & span {
+            text-align: start;
+            unicode-bidi: plaintext;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .actions {
+            display: flex;
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+
+            button {
+                margin: 1px;
+            }
+        }
+
+        &::before {
+            border-right: 1rem solid #ebebeb;
+        }
+
+        &::before,
+        &::after {
+            bottom: -0.1rem;
+            content: "";
+            height: 1rem;
+            position: absolute;
+        }
+
+        &.from-me {
+            align-self: flex-end;
+            margin-bottom: 3.5rem !important;
+
+            &::before {
+                border-bottom-left-radius: 0.8rem 0.7rem;
+                right: -0.35rem;
+                transform: translate(0, -0.1rem);
+            }
+
+            &::after {
+                background-color: #fff;
+                border-bottom-left-radius: 0.5rem;
+                right: -40px;
+                transform: translate(-30px, -2px);
+                width: 10px;
+            }
+        }
+
+        &.from-them {
+            align-items: flex-start;
+
+            &::before {
+                border-bottom-right-radius: 0.8rem 0.7rem;
+                left: -0.35rem;
+                transform: translate(0, -0.1rem);
+            }
+
+            &::after {
+                background-color: #fff;
+                border-bottom-right-radius: 0.5rem;
+                left: 20px;
+                transform: translate(-30px, -2px);
+                width: 10px;
+            }
+        }
+
+        &.confirmed {
+            background-color: #a7fdb2;
+            color: #000;
+
+            &::before {
+                border-right: 1rem solid #a7fdb2;
+            }
+        }
+
+        &.rejected {
+            background-color: #fcb0b6;
+            color: #000;
+
+            &::before {
+                border-right: 1rem solid #fcb0b6;
+            }
+        }
+    }
+}
+
+.review-conteiner[class^="from-"] {
+    margin: 0.5rem 0;
+    width: fit-content;
+}
+
+.review-conteiner.from-me~.review-conteiner.from-me {
+    margin: 0.25rem 0 0;
+}
+
+.review-conteiner.from-me~.review-conteiner.from-me:not(:last-child) {
+    margin: 0.25rem 0 0;
+}
+
+.review-conteiner.from-me~.review-conteiner.from-me:last-child {
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .reviews {
+        font-size: 1.05rem;
+        margin: 0 auto 1rem;
+        max-width: 600px;
+        padding: 0.25rem 0.875rem;
+
+        .review-conteiner {
+            margin: 0.5rem 0;
+        }
+    }
+}

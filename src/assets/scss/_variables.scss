@@ -1,0 +1,83 @@
+$separator:"\\:" !default;
+
+$sm:576px !default;
+$md:768px !default;
+$lg:992px !default;
+$xl:1200px !default;
+$gutter:.5rem !default;
+
+$fieldMargin: 1rem !default;
+$fieldLabelMargin: .5rem !default;
+$helperTextMargin: .25rem !default;
+
+$spacer:1rem !default;
+
+$breakpoints: (
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px
+);
+
+/* General */
+$mainColor: #00a8bb;
+$lightColor: #80D4DD;
+$darkColor: #00555E;
+$fadedMainColor: #00a8bb1a;
+$fontSize:14px;
+$bodyBgColor:white;
+$textColor:#333333;
+$textSecondaryColor:#707070;
+$borderRadius:3px;
+$dividerColor:#e3e3e3;
+$transitionDuration:.2s;
+$maskBgColor:#424242;
+$focusShadowColor:#8dcdff;
+
+/* Menu Common */
+$menuitemBadgeBgColor:#007be5;
+$menuitemBadgeColor:#ffffff;
+$submenuFontSize:13px;
+$menuitemActiveRouteColor:#1fa1fc;
+
+/* Menu Light */
+$menuBgColorFirst:#f3f4f9;
+$menuBgColorLast:#d7dbe8;
+$menuitemColor:#232428;
+$menuitemHoverColor:#0388e5;
+$menuitemActiveColor:#0388e5;
+$menuitemActiveBgColor:#ffffff;
+$menuitemBorderColor:rgba(207, 211, 224, 0.6);
+
+/* Menu Dark */
+$menuDarkBgColorFirst:#00a9bb;
+$menuDarkBgColorLast:#3b3e47;
+$menuitemDarkColor:#ffffff;
+$menuSubItemDarkColor:#000;
+$menuitemDarkHoverColor:#ffffff;
+$menuSubItemDarkHoverColor:#0388e5;
+$menuitemDarkActiveColor:#000;
+$menuitemDarkActiveBgColor:#ffffff;
+$menuitemDarkBorderColor:rgba(52, 56, 65, 0.6);
+
+/* Topbar */
+$topbarLeftBgColor:#0388E5;
+$topbarRightBgColor:#07BDF4;
+$topbarItemBadgeBgColor:#ef6262;
+$topbarItemBadgeColor:#ffffff;
+$topbarItemColor:#ffffff;
+$topbarItemHoverColor:#c3e8fb;
+$topbarSearchInputBorderBottomColor:#ffffff;
+$topbarSearchInputColor:#ffffff;
+
+/* Footer */
+$footerBgColor:#ffffff;
+
+$headerHeight: 60px;
+$footerHeight: 35px;
+
+/* Health Check Status*/
+$noDataColor: gray;
+$activeColor: green;
+$idleColor: orange;
+$inactiveColor:red;

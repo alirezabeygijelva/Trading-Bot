@@ -1,0 +1,286 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .email-container{
+        margin-top: 5px !important;
+    }
+
+    .intro-container {
+        padding-bottom: 250px !important;
+    }
+
+    .feature-title .feature-text {
+        font-size: 15px !important;
+    }
+
+    .feature-title .feature-line {
+        height: 3px !important;
+        margin-top: 11px !important;
+    }
+
+    .feature-title .feature-image {
+        width: 35% !important;
+        height: 35% !important;
+        margin: 0 auto !important;
+    }
+
+    .feature-part div {
+        margin: 5px !important;
+    }
+
+    .mission .mission-text {
+        padding-left: 0px !important;
+    }
+
+    .mission .mission-text .mission-title {
+        font-size: 15px !important;
+        padding-top: 20px !important
+    }
+
+    .mission .mission-text .mission-line {
+        height: 3px !important;
+        margin-top: 5px !important;
+    }
+
+    .mission .mission-text .mission-description {
+        font-size: 13px !important;
+    }
+
+    .mission .mission-image .mission-pic {
+        width: 50% !important;
+        height: 50% !important;
+    }
+
+    .mission .mission-image {
+        padding-top: 20px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .reason .reason-title {
+        margin-left: 0px !important;
+        margin-top: 35px !important;
+    }
+
+    .reason .reason-title .reason-text {
+        font-size: 15px !important;
+    }
+
+    .reason .reason-title .reason-line {
+        height: 3px !important;
+        margin-top: 5px !important;
+    }
+
+    .reason .reason-title .reason-description {
+        font-size: 14px !important;
+    }
+
+    .reason .reason-info {
+        display: grid !important;
+        margin-left: 0px !important;
+    }
+
+    .reason .reason-info .reason-image {
+        width: 14% !important;
+        height: 13% !important;
+    }
+
+    .reason .reason-info .reason-description {
+        font-size: 12px !important;
+    }
+
+    .reason .reason-info .reason-description span {
+        word-break: break-word !important;
+    }
+
+    .container-sm, .container {
+        max-width: 540px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .email-container{
+        margin-top: 5px !important;
+    }
+
+    .mission .mission-text {
+        padding-left: 0px !important;
+        padding-top: 2px !important;
+    }
+
+    .mission .mission-text .mission-title {
+        font-size: 15px !important;
+    }
+
+    .mission .mission-text .mission-line {
+        height: 3px !important;
+        margin-top: 5px !important;
+    }
+
+    .mission .mission-text .mission-description {
+        font-size: 16px !important;
+    }
+
+    .mission .mission-image .mission-pic {
+        width: 45% !important;
+    }
+
+    .mission .mission-image {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .reason .reason-title {
+        margin-left: 0px !important;
+        margin-top: 10px !important;
+    }
+
+    .reason .reason-title .reason-text {
+        font-size: 15px !important;
+    }
+
+    .reason .reason-title .reason-line {
+        height: 3px !important;
+        margin-top: 5px !important;
+    }
+
+    .reason .reason-title .reason-description {
+        font-size: 14px !important;
+    }
+
+    .reason .reason-info {
+        display: grid !important;
+        margin-left: 0px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .reason .reason-info .reason-image {
+        width: 11% !important;
+        height: 10% !important;
+    }
+
+    .reason .reason-info .reason-description {
+        font-size: 14px !important;
+    }
+
+    .reason .reason-info .reason-description span {
+        word-break: break-word !important;
+    }
+
+    .feature-title .feature-text {
+        font-size: 15px !important;
+    }
+
+    .feature-title .feature-line {
+        height: 3px !important;
+        margin-top: 11px !important;
+        margin-left: 220px !important;
+    }
+
+    .feature-title .feature-image {
+        width: 35% !important;
+        height: 35% !important;
+        margin: 0 auto !important;
+    }
+
+    .feature-part div {
+        margin: 5px !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .intro-container {
+        padding-bottom: 400px !important;
+    }
+
+    .mission .mission-text {
+        padding-left: 10px !important;
+        padding-top: 70px !important;
+    }
+
+    .mission .mission-image {
+        padding-bottom: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .reason .reason-title {
+        margin-left: 0px !important;
+    }
+
+    .reason .reason-info {
+        margin-left: -80px !important;
+    }
+
+    .feature-title .feature-line {
+        margin-left: 75px !important;
+    }
+
+    .feature-title .feature-image {
+        height: unset !important;
+        width: unset !important;
+    }
+
+    .feature-part div {
+        margin: 5px 5px 10px 5px !important;
+    }
+
+    .container-md, .container-sm, .container {
+        max-width: 720px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .intro-container {
+        padding-bottom: 600px !important;
+    }
+
+    .mission .mission-text {
+        padding-top: 2px !important;
+    }
+
+    .mission .mission-image {
+        padding-left: 110px !important;
+    }
+
+    .feature-title .feature-line {
+        margin-left: 111px !important;
+    }
+
+    .container-lg, .container-md, .container-sm, .container {
+        max-width: 960px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1140px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .intro-container {
+        padding-bottom: 200px !important;
+    }
+
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 2300px) {
+
+    .intro-container {
+        padding-bottom: 600px !important;
+    }
+
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1140px;
+    }
+}

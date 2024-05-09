@@ -1,0 +1,329 @@
+/* ==========================================================================
+font
+========================================================================== */
+@font-face {
+  font-family: "IRANSansX_Regular";
+  src: url("../../fonts/woff/IRANSansX-Regular.woff"),
+    url("../../fonts/woff2/IRANSansX-Regular.woff2");
+}
+
+@font-face {
+  font-family: "IRANSansX_Bold";
+  src: url("../../fonts/woff/IRANSansX-Bold.woff"),
+    url("../../fonts/woff2/IRANSansX-Bold.woff2");
+}
+
+/*****************************************/
+#home-container .container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#home-container .header {
+  background-image: url("../../images/header.png");
+  height: 504px;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+#home-container .logo {
+  margin-top: 25px;
+}
+
+#home-container .logo-image {
+  width: 121px;
+  height: 50px;
+}
+
+#home-container .intro-container {
+  display: flex;
+  height: 100vh;
+  padding-left: 100px !important;
+  padding-bottom: 90px;
+}
+
+#home-container .intro-container .intro {
+  color: white;
+  align-self: center;
+}
+
+#home-container .intro-container .intro-title {
+  font-size: 20px;
+  font-family: "IRANSansX_Bold";
+}
+
+#home-container .intro-container .intro-description {
+  font-size: 13px;
+  margin-top: 14px;
+  font-family: "IRANSansX_Regular";
+  text-align: justify;
+}
+
+/*****************************************/
+#home-container .mission {
+  height: 595px;
+}
+
+#home-container .mission .mission-container {
+  display: flex;
+}
+
+#home-container .mission-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 133px;
+}
+
+#home-container .mission-title {
+  display: flex;
+  font-size: 20px;
+  color: #0008ff;
+  font-family: "IRANSansX_Bold";
+}
+
+#home-container .mission-line {
+  height: 5px;
+  width: 70px;
+  margin-top: 13px;
+  background-color: #0008FF;
+}
+
+#home-container .mission-description {
+  display: flex;
+  padding-top: 13px;
+  text-align: left;
+  font-family: 'Poppins';
+  font-weight: 'lighter';
+  font-size: '13px';
+  color: '#262626';
+  font-family: "IRANSansX_Regular";
+  text-align: justify;
+}
+
+#home-container .mission-image {
+  padding-top: 96px;
+  padding-bottom: 151px;
+  padding-left: 240px;
+}
+
+#home-container .mission-pic {
+  width: 324px;
+  height: 348px;
+}
+
+/*****************************/
+#home-container .reason {
+  background-color: #F4F5FA;
+  height: 400px;
+  display: flex;
+}
+
+#home-container .reason-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 133px;
+  margin-top: 174px;
+  flex: 1;
+}
+
+#home-container .reason-title .reason-text {
+  font-size: 20px;
+  color: #0008ff;
+  /* margin-right: 271px; */
+  font-weight: bold;
+  font-family: "IRANSansX_Bold";
+}
+
+#home-container .reason-title .reason-line {
+  height: 5px;
+  width: 70px;
+  display: block;
+  margin-top: 21px;
+  background-color: #0008FF;
+}
+
+#home-container .reason-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -35px;
+  flex: 1;
+}
+
+#home-container .reason-info div {
+  display: flex;
+  flex: 1 1 50%;
+}
+
+#home-container .reason-image {
+  width: 71px;
+  height: 70px;
+  margin-right: 10px;
+}
+
+#home-container .reason-description {
+  font-size: 13px;
+  color: #262626;
+  font-family: "IRANSansX_Regular";
+  text-align: justify;
+  margin-right: 28px;
+}
+
+/*****************************/
+#home-container .feature {
+  height: 699px;
+  display: flex;
+}
+
+#home-container .footer input::placeholder,
+#home-container .footer textarea::placeholder {
+  color: #dee2e6;
+  opacity: 1;
+  /* Firefox */
+}
+
+#home-container .feature-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#home-container .feature-title .feature-text {
+  font-size: 20px;
+  color: #0008ff;
+  text-align: center;
+  font-weight: bold;
+  font-family: "IRANSansX_Bold";
+}
+
+#home-container .feature-title .feature-line {
+  height: 5px;
+  width: 70px;
+  display: block;
+  margin-top: 21px;
+  /* margin-left: 135px; */
+  background-color: #0008FF;
+}
+
+#home-container .feature-title .feature-image {
+  height: 464px;
+  width: 342px;
+}
+
+#home-container .feature-part {
+  align-items: center;
+}
+
+#home-container .feature-part div {
+  display: flex;
+  flex: 1 1 50%;
+  position: relative;
+  margin: 5px 20px 22px 5px;
+}
+
+#home-container .feature-shape {
+  height: 15px;
+  width: 15px;
+  display: block;
+  margin-top: 8px;
+  background-color: #0008FF;
+  position: absolute;
+}
+
+#home-container .feature-description {
+  font-size: 13px;
+  color: #262626;
+  padding-left: 20px;
+  font-family: "IRANSansX_Regular";
+}
+
+/*****************************/
+#home-container .footer {
+  background-image: url('../../images/footer.png');
+  height: 431px;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: cover;
+}
+
+
+#home-container .footer-text {
+  font-size: 20px;
+  color: white;
+  font-family: "IRANSansX_Bold";
+}
+
+#home-container .footer-line {
+  height: 5px;
+  width: 70px;
+  display: block;
+  margin-top: 8px;
+  background-color: white;
+}
+
+#home-container .footer-item {
+  border-radius: 19px !important;
+  background-color: #60AEFB !important;
+  border-color: #60AEFB !important;
+  margin-bottom: 1px;
+}
+
+#home-container .footer-button {
+  color: white !important;
+  border-radius: 19px !important;
+  background-color: #0008FF !important;
+  width: 100%;
+}
+
+#home-container .footer .copyright {
+  font-family: "IRANSansX_Regular";
+}
+
+.fa-btn {
+  background: URL("../../images/iranIcon.png") no-repeat center center;
+  background-color: white;
+  background-size: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px !important;
+  margin-right: 5px;
+}
+
+.en-btn {
+  background: URL("../../images/englishIcon.png") no-repeat center center;
+  background-size: auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px !important;
+}
+
+.active-lang {
+  outline: white solid 3px !important;
+}
+
+.hint-lable {
+  color: gray;
+  font-size: 12px;
+  margin-left: 10px
+}
+
+.empty-space {
+  color: white;
+}
+
+.hasTooltip > span{
+  width: 100%;
+}

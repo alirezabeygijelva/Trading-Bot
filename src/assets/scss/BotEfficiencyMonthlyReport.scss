@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+.botefficiencymonthly-report-card {
+    background-color: white;
+    max-height: 500px;
+    overflow: auto;
+
+    table.styled-table {
+        margin: auto;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+        tr {
+            border: 1px solid #dddddd;
+    
+    
+            &:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+    
+            th,
+            td {
+                border: 1px solid #dddddd;
+                font-size: 15px;
+                text-align: center;
+                padding: 12px 15px;
+            }
+    
+            .title-cell{
+                background: #fdfddb;
+                position: sticky;
+                left: 0;
+            }
+        }
+    
+        thead{
+            background: white;
+            position: sticky;
+            top: 0; 
+            box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+            z-index: 100;
+    
+            th {
+                background: #fdfddb;
+            }
+
+            .extetion-cell{
+                position: sticky;
+                left: 0; 
+            }
+        }
+
+        .extetion-cell{
+                background: #E88503;
+                position: sticky;
+            left: 0; 
+        }
+    }
+}
+
+
+

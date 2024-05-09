@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+#strategies-page {
+    .card-container {
+        .p-card {
+            cursor: pointer;
+            min-height: 100px;
+            background-color: #f2fafd;
+
+            &:hover {
+                background-color: #e7f6fd
+            }
+
+            &.is-active-strategy {
+                border: 1px solid #7ed8f9;
+            }
+
+            &.is-running-strategy {
+                background-color: #c3ffb2;
+
+                &:hover {
+                    background-color: #a5fb8e
+                }
+                
+                &.is-active-strategy {
+                    border: 1px solid #81fc5f;
+                }
+            }
+
+
+
+            .p-button:not(.p-button-icon-only) {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+.p-dialog {
+    .strategy-container {
+        .p-tabview {
+            .p-tabview-panels {
+                .watchlist-items {
+                    .p-card {
+                        cursor: pointer;
+                        min-height: 100px;
+                        background-color: #f2fafd;
+
+                        &:hover {
+                            background-color: #e7f6fd
+                        }
+
+                        &.active-watchlist {
+                            background-color: #fff8e0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

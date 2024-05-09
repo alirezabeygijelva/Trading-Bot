@@ -1,0 +1,65 @@
+@import './variables.scss';
+
+#bot-deployment-container {
+    .p-divider.p-divider-horizontal:before {
+        border-top-width: 2px;
+        border-top-color: #535353;
+    }
+
+    .sections-container {
+        .card {
+            //margin: .5rem;
+            //border: 1px solid var(--bluegray-800);
+            //border-radius: 5px;
+            //box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            flex: 1 1 600px;
+            padding-top: 80px;
+
+            &.unknown {
+                i.pi-circle-fill {
+                    color: var(--bluegray-800);
+                }
+
+                .status-text {
+                    color: var(--bluegray-800);
+                }
+            }
+
+            &.running {
+                i.pi-circle-fill {
+                    color: var(--green-500);
+                }
+
+                .status-text {
+                    color: var(--green-500);
+                }
+            }
+
+            &.stopped {
+                i.pi-circle-fill {
+                    color: var(--pink-700);
+                }
+
+                .status-text {
+                    color: var(--pink-700);
+                }
+            }
+        }
+
+        .title {
+            background-color: rgba(0, 169, 187, 0.8);
+            color: white;
+            font-size: x-large;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

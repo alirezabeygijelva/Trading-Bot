@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+#exchange-balance-chart {
+    .highcharts-stocktools-wrapper {
+        .highcharts-menu-wrapper {
+            padding: 0 !important;
+        }
+    }
+
+    .loading-container {
+        height: inherit;
+    }
+
+    .category-selection {
+        .p-card-body {
+            .p-card-content {
+                display: flex;
+            }
+        }
+    }
+
+}

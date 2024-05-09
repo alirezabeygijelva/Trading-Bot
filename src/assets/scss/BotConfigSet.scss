@@ -1,0 +1,22 @@
+@import 'variables';
+
+#set-bot-config-dialog {
+    .p-fileupload {
+        .p-fileupload-content {
+            padding: 5px;
+        }
+    }
+
+    .p-dock {
+        z-index: 1000;
+
+        .p-dock-list {
+            background-color: $fadedMainColor !important;
+        }
+    }
+
+    .options-section {
+        height: 200px;
+        overflow-y: auto;
+    }
+}

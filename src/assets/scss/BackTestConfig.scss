@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+#backTest-config-container {
+    //ignore
+}
+
+#backTest-config-overview-create,
+#bot-config-overview-update {
+    .multiple-buttons{
+        .p-button {
+            min-width: 100px;
+        }
+    }
+    
+}

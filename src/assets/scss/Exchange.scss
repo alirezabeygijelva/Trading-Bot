@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+#exchangeDataPage {
+    height: 100%;
+
+    #exchangeAccountInfo {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .p-progress-spinner {
+            align-self: center;
+        }
+
+        >.p-card {
+            flex: 1 1 100%;
+
+            .p-card-body {
+                width: 100%;
+
+                .p-card-title {
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+
+                .p-card-content {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .assets {
+            flex: 1 1 100%;
+        }
+
+        .p-fieldset-content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

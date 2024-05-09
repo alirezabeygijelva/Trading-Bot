@@ -1,0 +1,82 @@
+@import './variables.scss';
+
+#divergence-health-check-container {
+    .colorized-circles {
+        .outer {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0 auto;
+
+            .middle {
+                transform: translate(25%, 25%);
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 50%;
+                margin: 0;
+
+                .inner {
+                    transform: translate(16%, 17.5%);
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 50%;
+                    margin: 0;
+                }
+            }
+        }
+
+        .no-data {
+            background-color: $noDataColor;
+        }
+
+        .active {
+            background-color: $activeColor;
+        }
+
+        .idle {
+            background-color: $idleColor;
+        }
+
+        .inactive {
+            background-color: $inactiveColor;
+        }
+    }
+
+    .square-no-data::before {
+        content: '\25A0';
+        color: $noDataColor;
+    }
+
+    .square-active::before {
+        content: '\25A0';
+        color: $activeColor;
+    }
+
+    .square-idle::before {
+        content: '\25A0';
+        color: $idleColor;
+    }
+
+    .square-inactive::before {
+        content: '\25A0';
+        color: $inactiveColor;
+    }
+
+    .p-datatable-header {
+        .table-header-container {
+            display: flex;
+
+            .filter-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: auto;
+
+                button {
+                    margin: 2.5px;
+                }
+            }
+        }
+    }
+}

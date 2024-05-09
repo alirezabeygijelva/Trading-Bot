@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+#strategy-page {
+    .strategy-container {
+        .p-tabview {
+            .p-tabview-panels {
+                .watchlist-items {
+                    max-height: 40vh;
+                    overflow-y: auto;
+
+                    .p-card {
+                        cursor: pointer;
+                        min-height: 100px;
+                        background-color: #f2fafd;
+
+                        &:hover {
+                            background-color: #e7f6fd
+                        }
+
+                        &.active-watchlist {
+                            background-color: #fff8e0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

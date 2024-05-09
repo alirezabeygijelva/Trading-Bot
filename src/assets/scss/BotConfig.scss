@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+#bot-config {
+    //ignore
+}
+
+#bot-config-overview-create,
+#bot-config-overview-update {
+    .multiple-buttons{
+        .p-button {
+            min-width: 100px;
+        }
+    }
+    
+}

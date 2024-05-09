@@ -1,0 +1,74 @@
+@import './variables.scss';
+
+#potential-engine-versions-container {
+    .card {
+        table {
+            thead {
+                tr {
+                    th {
+                        &.p-filter-column {
+
+                            >input,
+                            >div {
+                                width: 100%;
+                            }
+                        }
+
+                        &.exchange-col {
+                            background-color: #e4e4e5;
+                        }
+
+                        justify-content: center !important;
+
+                        .p-column-header-content {
+                            justify-content: center !important;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    &.p-row-expanded {
+                        background-color: $mainColor;
+                    }
+
+                    &.p-datatable-emptymessage {
+                        td {
+                            width: 100%;
+                            justify-content: center;
+                        }
+                    }
+
+                    &.row-hover:hover {
+                        background-color: #e9ecef;
+
+                        td {
+                            &.exchange-col {
+                                background-color: #e9ecef
+                            }
+                        }
+                    }
+
+                    td {
+                        &.exchange-col {
+                            background-color: #f8f9fa
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .p-filter-column {
+        .filterButtons {
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 1px;
+            }
+        }
+    }
+}

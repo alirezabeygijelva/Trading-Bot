@@ -1,0 +1,96 @@
+@import './variables.scss';
+
+#finance-management-container {
+    .p-card-body {
+        table {
+            thead {
+                tr {
+                    th {
+                        justify-content: center !important;
+
+                        .p-column-header-content {
+                            justify-content: center !important;
+                            flex-wrap: wrap;
+                        }
+
+                        &.exchange-col {
+                            background-color: #e4e4e5;
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    &.p-row-expanded {
+                        background-color: $mainColor;
+                    }
+
+                    &.p-datatable-emptymessage {
+                        td {
+                            width: 100%;
+                            justify-content: center;
+                        }
+                    }
+
+                    &.succeed {
+                        background-color: #ccffd5;
+                    }
+
+                    &.failed {
+                        background-color: #ffd2d2;
+                    }
+
+                    td {
+                        &.exchange-col {
+                            background-color: #f8f9fa
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .p-datatable-header {
+        .table-header-container {
+            display: flex;
+
+            .filter-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: auto;
+
+                button {
+                    margin: 2.5px;
+                }
+            }
+        }
+    }
+
+    .p-datatable-footer {
+        .table-footer-container {
+            display: flex;
+
+            label {
+                display: inline-block !important;
+            }
+
+            .sum-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .p-filter-column {
+        .filterButtons {
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 1px;
+            }
+        }
+    }
+}

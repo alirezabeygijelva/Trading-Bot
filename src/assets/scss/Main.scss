@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+#main-container {
+    height: calc(100% - #{$headerHeight + $footerHeight});
+    overflow-y: auto;
+
+    .p-tabmenu {
+        margin-bottom: 1rem;
+    }
+
+    #main-layout {
+        // height: 100%;
+        position: relative;
+
+        .tools-speeddial {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+        }
+    }
+
+}
+
+.p-dialog {
+    &.changelog {
+        .p-dialog-header {
+            background-color: khaki;
+
+            .p-dialog-title {
+                color: rgb(34, 34, 34);
+            }
+        }
+
+        .p-dialog-content {
+            padding-top: 15px;
+
+            .website-changelog {
+                .name {
+                    font-weight: bold;
+                }
+
+                .date {
+                    font-size: 15px;
+                }
+
+                .changelog {
+                    font-weight: 300;
+                }
+
+                .engine-version {
+                    padding-top: 10px;
+                    padding-left: 25px;
+
+                    .name {
+                        font-weight: bold;
+                    }
+
+                    .date {
+                        font-size: 15px;
+                    }
+
+                    .changelog {
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}

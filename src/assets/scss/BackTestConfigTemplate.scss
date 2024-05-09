@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+#backTest-config-template-container {
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+
+        &.active {
+            box-shadow: 0 4px 8px 0 rgba(0, 128, 0, 0.2);
+        }
+
+        &:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+            &.active {
+                box-shadow: 0 8px 16px 0 rgba(0, 128, 0, 0.2);
+            }
+        }
+
+        .template-status {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            height: 20px;
+
+            .activation-status {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+
+                &.on {
+                    background-color: green;
+                }
+
+                &.off {
+                    background-color: red;
+                }
+            }
+        }
+
+        .p-button-success:hover {
+            background-color: #689F38;
+            color: white;
+        }
+    }
+}
+

@@ -1,0 +1,159 @@
+@import './variables';
+@import "./_fonts.scss";
+
+:lang(fa)>.p-component {
+  font-family: "IRANSansX_Regular" !important;
+}
+
+:lang(en)>.p-component {
+  font-family: "Poppins_Light" !important;
+}
+
+#app-container {
+  height: 100%;
+}
+
+.App-logo {
+  height: $headerHeight;
+  pointer-events: none;
+}
+
+.App-header {
+  height: $headerHeight;
+  background-color: $mainColor;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-footer {
+  height: $footerHeight;
+  background-color: #282c34;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.p-datatable-scrollable {
+  .p-datatable-thead {
+    >tr {
+      >th {
+        flex: 1 0 auto !important;
+      }
+    }
+  }
+}
+
+.p-datatable-scrollable {
+  .p-datatable-tbody {
+    >tr {
+      >td {
+        flex: 1 0 auto !important;
+      }
+    }
+  }
+}
+
+.p-column-filter-row {
+  .p-column-filter-element {
+    width: 100% !important;
+  }
+}
+
+.chips-container {
+  ul.p-chips-multiple-container {
+    .p-chips-token {
+      margin-bottom: 2px;
+    }
+  }
+}
+
+.stretch-childs {
+  >* {
+    width: 100%;
+  }
+}
+
+// @mixin flex-1-x {
+//   @for $i from 1 through 10 {
+//     .flex-1-#{$i*10} {
+//       flex: 1 1 $i*10% !important;
+//     }
+//   }
+// }
+.text-shadow-none {
+  text-shadow: none !important;
+}
+
+.config-key-dropdown.p-disabled {
+  opacity: 100%;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-ltr {
+  direction: ltr;
+}
+
+[role=tooltip] {
+  z-index: 999;
+}
+
+$flex-1-x: (
+  'flex-1-10': 1 1 10%,
+  'flex-1-20': 1 1 20%,
+  'flex-1-30': 1 1 30%,
+  'flex-1-40': 1 1 40%,
+  'flex-1-50': 1 1 50%,
+  'flex-1-60': 1 1 60%,
+  'flex-1-70': 1 1 70%,
+  'flex-1-80': 1 1 80%,
+  'flex-1-90': 1 1 90%,
+  'flex-1-100': 1 1 100%
+);
+
+@mixin style-class($prop, $map, $responsive: false) {
+
+  @each $key,
+  $val in $map {
+    .#{$key} {
+      #{$prop}: #{$val} !important;
+    }
+  }
+
+  @if ($responsive) {
+
+    @each $key,
+    $val in $breakpoints {
+      @media screen and (min-width: #{$val}) {
+        .#{$key + $separator} {
+
+          @each $key,
+          $val in $map {
+            &#{$key} {
+              #{$prop}: #{$val} !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include style-class('flex', $flex-1-x, true);

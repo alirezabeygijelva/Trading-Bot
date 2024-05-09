@@ -1,0 +1,41 @@
+@import './variables.scss';
+
+.card {
+    table {
+        thead {
+            tr {
+                th {
+                    justify-content: center !important;
+
+                    .p-column-header-content {
+                        justify-content: center !important;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                &.p-row-expanded {
+                    background-color: $mainColor;
+                }
+
+                &.p-datatable-emptymessage {
+                    td {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+
+                &.succeed {
+                    background-color: #ccffd5;
+                }
+
+                &.failed {
+                    background-color: #ffd2d2;
+                }
+            }
+        }
+    }
+}

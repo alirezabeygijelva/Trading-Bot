@@ -1,0 +1,73 @@
+#engine-versions-container {
+    .card {
+        table {
+            thead {
+                tr {
+                    th {
+                        &.p-filter-column {
+
+                            >input,
+                            >div {
+                                width: 100%;
+                            }
+                        }
+
+                        justify-content: center !important;
+
+                        .p-column-header-content {
+                            justify-content: center !important;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .p-datatable-header {
+        .table-header-container {
+            display: flex;
+
+            .filter-container {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: auto;
+
+                button {
+                    margin: 2.5px;
+                }
+            }
+        }
+    }
+
+    .p-filter-column {
+        .filterButtons {
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 1px;
+            }
+        }
+    }
+
+}
+
+body {
+
+    #update-dialog {
+        .p-dialog-content {
+            .card {
+
+                form {
+                    margin-top: 1rem;
+                }
+
+                .p-field {
+                    margin-bottom: 2.2rem;
+                }
+            }
+
+        }
+    }
+}

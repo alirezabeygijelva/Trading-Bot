@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+#bot-efficiency-report-container {
+    .card {
+        table {
+            thead {
+                tr {
+                    th {
+                        &.p-filter-column {
+
+                            >input,
+                            >div {
+                                width: 100%;
+                            }
+                        }
+
+                            // background-color: #4473c1;
+                            // color: #ffffff;
+
+                            justify-content: center !important;
+
+                            .p-column-header-content {
+                                justify-content: center !important;
+                                flex-wrap: wrap;
+                            }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    &.p-row-expanded {
+                        background-color: $mainColor;
+                    }
+
+                    &.p-datatable-emptymessage {
+                        td {
+                            width: 100%;
+                            justify-content: center;
+                        }
+                    }
+
+                    // &.row-hover:hover {
+                    //     background-color: #e9ecef;
+
+                    //     td {
+                    //         &.exchange-col {
+                    //             background-color: #e9ecef
+                    //         }
+                    //     }
+                    // }
+
+                    td {
+                        &.config-col {
+                            background-color: #adebea
+                        }
+                        &.reason-col {
+                            background-color: #fad3d7
+                        }
+                        &.registered-col {
+                            background-color: #c9ffe5
+                        }
+                        &.missed-target-col {
+                            background-color: #fed966
+                        }
+                        &.missed-stop-col {
+                            background-color: #e79da5
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .p-filter-column {
+        .filterButtons {
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 1px;
+            }
+        }
+    }
+}
